@@ -1,0 +1,16 @@
+.shop{
+    display: flex;
+    
+}
+.products{
+    width: 70%;
+    margin: 25px;
+    padding: 20px;
+    border-right: 1px solid lightgrey;
+}
+.cart{
+    width: 30%;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}

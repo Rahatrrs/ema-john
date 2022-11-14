@@ -1,0 +1,11 @@
+
+.details-new{
+    display: flex;
+}
+.left-section-new{
+    width: 60%;
+    
+}
+.right-section-new{
+    text-align: left;
+}

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Header from './components/Header/Header'
+
+import Shop from './components/Shop/Shop';
+import ProductDetails from './components/ProductDetails/ProductDetails';
+import Review from './components/Review/Review';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+    <Header></Header>
+    <Routes>
+    <Route path='/shop' element={<Shop></Shop>}></Route>
+    <Route path='/product/:productKey' element={<ProductDetails></ProductDetails>}></Route>
+    <Route path='/review' element={<Review></Review>}></Route>
+    </Routes>
+    
+    </BrowserRouter>
   );
 }
 

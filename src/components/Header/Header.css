@@ -1,0 +1,29 @@
+.image img{
+    height: 80px;
+}
+.image{
+    text-align: center;
+}
+.nav{
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    font-size: 700;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    padding: 3px;
+}
+
+.background{
+    background-color: black;
+    line-height: 25px;
+    
+}
+.nav a:hover{
+    background-color: #ff8400;
+    color: white;
+   
+}
